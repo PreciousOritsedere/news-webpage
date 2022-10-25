@@ -24,6 +24,8 @@ a {
   text-decoration: none;
   color: #00001a;
   padding-right: 20px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 a:hover {
@@ -36,10 +38,6 @@ a:focus {
 
 ul {
   list-style: none;
-}
-
-li {
-  line-height: 2.2;
 }
 
 .legos img {
@@ -100,7 +98,7 @@ button:hover {
 .newsContent {
   color: #fff;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
   padding: 50px 120px;
 }
@@ -135,7 +133,7 @@ button:hover {
 
 .trendingContainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   padding: 20px;
 }
 
@@ -213,7 +211,7 @@ button:hover {
   border-radius: 10px;
 }
 
-.usersContainer h1{
+.usersContainer h1 {
   color: #e9ab53;
   margin-bottom: 20px;
 }
@@ -223,8 +221,9 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   padding: 18px;
-  text-align: left;
+  text-align: center;
   border-bottom: 1px solid #5d5f79;
+  overflow-wrap: break-word;
 }
 
 .users img {
@@ -248,7 +247,9 @@ button:hover {
   gap: 12px;
 }
 
-.pagination-child:hover, .prev:hover, .next:hover {
+.pagination-child:hover,
+.prev:hover,
+.next:hover {
   background-color: #e9ab53;
   color: #00001a;
   font-weight: 700;
