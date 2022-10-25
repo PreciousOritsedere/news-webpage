@@ -129,9 +129,9 @@ button:hover {
   line-height: 1.5;
 }
 
-/* .newsCard :nth-last-child() {
+.newsCard:nth-child(3) {
   border-right: none;
-} */
+}
 
 .trendingContainer {
   display: grid;
@@ -191,8 +191,8 @@ button:hover {
   height: 64px;
   margin: 8px;
   border-radius: 50%;
-  border: 6px solid #fff;
-  border-color: #fff transparent #fff transparent;
+  border: 6px solid #00001a;
+  border-color: #00001a transparent #00001a transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
 @keyframes lds-dual-ring {
@@ -204,11 +204,27 @@ button:hover {
   }
 }
 
+.usersContainer {
+  margin: 40px;
+  padding: 20px;
+  background-color: #00001a;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.usersContainer h1{
+  color: #e9ab53;
+  margin-bottom: 20px;
+}
+
 .users {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 12px;
+  padding: 18px;
+  text-align: left;
+  border-bottom: 1px solid #5d5f79;
 }
 
 .users img {
@@ -230,6 +246,12 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 12px;
+}
+
+.pagination-child:hover, .prev:hover, .next:hover {
+  background-color: #e9ab53;
+  color: #00001a;
+  font-weight: 700;
 }
 
 .pagination-child,

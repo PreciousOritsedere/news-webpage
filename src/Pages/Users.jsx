@@ -4,12 +4,12 @@ import Spinner from "../components/Spinner";
 import Pagination from "../components/Pagination";
 import ErrorBoundary from "../components/ErrorBoundary";
 
-function Users({ currUsers }) {
+function Users() {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const [currPage, setCurrPage] = useState(1);
-  const [usersPerPage] = useState(10);
+  const [usersPerPage] = useState(5);
 
   useEffect(() => {
     const fetchApi = async () => {
@@ -34,9 +34,9 @@ function Users({ currUsers }) {
   const numberOfPages = Math.ceil(users.length / usersPerPage);
 
   return (
-    <div>
+    <div className="usersContainer">
       <h1>Web 3 Users</h1>
-      {currUsers.map((user) => (
+      {currentUsers.map((user) => (
         <div key={user.login.uuid} className="users">
           <img src={user.picture.thumbnail} alt="user" />
           <h3>
@@ -51,17 +51,11 @@ function Users({ currUsers }) {
 
       <section>
         <div>
-          <h2>Home</h2>
-        </div>
-        <div>
-          <ErrorBoundary>
-            <div>currentUsers={currentUsers}</div>
-          </ErrorBoundary>
           <ErrorBoundary>
             <Pagination
               numberOfPages={numberOfPages}
-              currentPage={currPage}
-              setCurrentPage={setCurrPage}
+              currPage={currPage}
+              setCurrPage={setCurrPage}
             />
           </ErrorBoundary>
         </div>

@@ -5,7 +5,7 @@ function News() {
   return (
     <>
       <div className="newsContainer">
-        <h1>New</h1>
+        <h1>News</h1>
         <div className="newsContent">
           <div className="newsCard">
             <h2>Hydrogen VS Electric Cars</h2>
