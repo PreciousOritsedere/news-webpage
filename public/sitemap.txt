@@ -1,0 +1,4 @@
+https://newswebsiteapp.netlify.app/
+https://newswebsiteapp.netlify.app/Users
+https://newswebsiteapp.netlify.app/News
+https://newswebsiteapp.netlify.app/News/trending

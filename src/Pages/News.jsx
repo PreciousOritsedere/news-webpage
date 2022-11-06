@@ -4,6 +4,11 @@ import { Link, Outlet } from "react-router-dom";
 function News() {
   return (
     <>
+      <Helmet>
+        <title>Home | Git Spy</title>
+        <meta name="description" content="News display page" />
+        <link rel="canonical" href="/news" />
+      </Helmet>
       <div className="newsContainer">
         <h1>News</h1>
         <div className="newsContent">

@@ -4,6 +4,11 @@ import Legos from "../assets/images/image-web-3-desktop.jpg";
 function Home() {
   return (
     <>
+      <Helmet>
+        <title>Home | Git Spy</title>
+        <meta name="description" content="Home page of Git Spy" />
+        <link rel="canonical" href="/home" />
+      </Helmet>
       <div className="legos">
         <img src={Legos} alt="web 3" />
       </div>
